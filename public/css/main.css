@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.test {
+  color: red;
+  font-weight: bold;
+  font-size: 10px; }
+
+/*# sourceMappingURL=main.css.map */
