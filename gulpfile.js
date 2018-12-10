@@ -10,6 +10,7 @@ const del = require('del'); // очищает папку
 const autoprefixer = require('gulp-autoprefixer'); // добавляет в css префиксы
 // const remember = require('gulp-remember'); //
 // const gulpPath = require('path');
+// const newer = require('gulp-newer');
 // const cached = require('gulp-cached');
 const browserSync = require('browser-sync').create(); // запускает локальный браузер Синк
 const notify = require('gulp-notify'); // отлов ошибок
@@ -45,7 +46,7 @@ gulp.task('clean', function () {
 
 gulp.task('assets', function () {
   return gulp.src('frontend/**', {since: gulp.lastRun('assets')}) // обновляет последние измененные файлы
-  // .pipe(newer('public')) // не повторяет файлы, компилит новые
+    // .pipe(newer('public')) // не повторяет файлы, компилит новые
     .pipe(debug({title: 'assets'}))
     .pipe(gulp.dest('public'));
 });
@@ -66,7 +67,7 @@ gulp.task('serve', function () {
   browserSync.watch('public/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task('dev', gulp.series('build', gulp.parallel('watch', 'serve')));
+gulp.task('start', gulp.series('build', gulp.parallel('watch', 'serve')));
 
 
 
