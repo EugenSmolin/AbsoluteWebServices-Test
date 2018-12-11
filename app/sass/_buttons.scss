@@ -1,0 +1,78 @@
+.btn-primary {
+	@include button-variant(
+		$colorBlue, 
+		$colorBlue, 
+		$hover-background: darken($colorBlue, 7.5%), 
+		$hover-border: darken($colorBlue, 10%), 
+		$active-background: darken($colorBlue, 10%), 
+		$active-border: darken($colorBlue, 12.5%)
+		);
+}
+.btn-default {
+	@include button-variant(
+		$colorWhite, 
+		$colorBlue, 
+		$hover-background: darken($colorWhite, 7.5%), 
+		$hover-border: darken($colorBlue, 10%), 
+		$active-background: darken($colorWhite, 10%), 
+		$active-border: darken($colorBlue, 12.5%)
+		);
+}
+.btn-success {
+	@include button-variant(
+		$colorGreen, 
+		$colorGreen, 
+		$hover-background: darken($colorGreen, 7.5%), 
+		$hover-border: darken($colorGreen, 10%), 
+		$active-background: darken($colorGreen, 10%), 
+		$active-border: darken($colorGreen, 12.5%)
+		);
+}
+.btn-info {
+	@include button-variant(
+		$colorSky, 
+		$colorSky, 
+		$hover-background: darken($colorSky, 7.5%), 
+		$hover-border: darken($colorSky, 10%), 
+		$active-background: darken($colorSky, 10%), 
+		$active-border: darken($colorSky, 12.5%)
+		);
+}
+.btn-warning {
+	@include button-variant(
+		$colorPink, 
+		$colorPink, 
+		$hover-background: darken($colorPink, 7.5%), 
+		$hover-border: darken($colorPink, 10%), 
+		$active-background: darken($colorPink, 10%), 
+		$active-border: darken($colorPink, 12.5%)
+		);
+}
+.btn-danger {
+	@include button-variant(
+		$colorRed, 
+		$colorRed, 
+		$hover-background: darken($colorRed, 7.5%), 
+		$hover-border: darken($colorRed, 10%), 
+		$active-background: darken($colorRed, 10%), 
+		$active-border: darken($colorRed, 12.5%)
+		);
+}
+
+.btn-primary,
+.btn-default,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+	border-radius: 2px;
+	font-family: "OpenSansRegular", sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 0 5px;
+	color: #fff;
+}
+
+.btn-default {
+	color: $colorBlue;
+}
