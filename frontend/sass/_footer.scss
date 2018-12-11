@@ -1,0 +1,47 @@
+footer {
+  padding: 50px 0;
+
+  .footer-list {
+    @include make-col-ready();
+    @include media-breakpoint-only(xl) {
+      @include make-col(3);
+    }
+    @include media-breakpoint-only(lg) {
+      @include make-col(3);
+    }
+    @include media-breakpoint-only(md) {
+      @include make-col(3);
+    }
+    @include media-breakpoint-only(sm) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-only(xs) {
+      @include make-col(12);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    &__name {
+      color: $mainBlue;
+      font-family: "Roboto", sans-serif; /* Myriad Pro */
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &__link {
+      display: block;
+      color: #000;
+      margin: 15px 0;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif; /* Myriad Pro */
+      font-size: 16px;
+
+      &:hover {
+        font-weight: bold;
+
+      }
+    }
+  }
+}

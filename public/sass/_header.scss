@@ -1,0 +1,93 @@
+header {
+  .header-top {
+    @include make-container();
+    @include make-container-max-widths();
+    padding: 25px 0;
+
+    &__logo {
+      @include make-col-ready();
+      @include media-breakpoint-only(xl) {
+        @include make-col(3);
+      }
+      @include media-breakpoint-only(lg) {
+        @include make-col(3);
+      }
+      @include media-breakpoint-only(md) {
+        @include make-col(3);
+      }
+      @include media-breakpoint-only(sm) {
+        @include make-col(6);
+      }
+      @include media-breakpoint-only(xs) {
+        @include make-col(12);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+    .header-search {
+      @include make-col-ready();
+      @include media-breakpoint-only(xl) {
+        @include make-col(4);
+        @include make-col-offset(5);
+      }
+      @include media-breakpoint-only(lg) {
+        @include make-col(4);
+        @include make-col-offset(5);
+      }
+      @include media-breakpoint-only(md) {
+        @include make-col(4);
+        @include make-col-offset(5);
+      }
+      @include media-breakpoint-only(sm) {
+        @include make-col(6);
+      }
+      @include media-breakpoint-only(xs) {
+        @include make-col(12);
+      }
+    }
+  }
+  .header-list {
+    background-color: $lightGrey;
+
+    &__nav {
+      @include make-container();
+      @include make-container-max-widths();
+      padding: 0;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0 30px;
+      text-align: center;
+      color: #000;
+
+      @include media-breakpoint-only(md) {
+        padding: 0 20px;
+      }
+
+      &:hover {
+        background-color: $greyHover;
+        color: $mainBlue;
+      }
+    }
+    .nav-link.active {
+      background-color: $greyHover;
+      color: $mainBlue;
+    }
+
+  }
+}

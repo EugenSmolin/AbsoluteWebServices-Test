@@ -3,7 +3,7 @@
 @import "../libs/bootstrap/scss/variables";
 @import "../libs/bootstrap/scss/mixins";
 /*@import "../libs/bootstrap/scss/root";
-@import "../libs/bootstrap/scss/reboot";*/
+/*@import "../libs/bootstrap/scss/reboot";*/
 @import "../libs/bootstrap/scss/type";
 /*@import "../libs/bootstrap/scss/images";
 @import "../libs/bootstrap/scss/code";*/
@@ -11,12 +11,12 @@
 /*@import "../libs/bootstrap/scss/tables";
 @import "../libs/bootstrap/scss/forms";*/
 @import "../libs/bootstrap/scss/buttons";
-/*@import "../libs/bootstrap/scss/transitions";
-@import "../libs/bootstrap/scss/dropdown";*/
+@import "../libs/bootstrap/scss/transitions";
+/*@import "../libs/bootstrap/scss/dropdown";*/
 @import "../libs/bootstrap/scss/button-group";
 @import "../libs/bootstrap/scss/input-group";
 /*@import "../libs/bootstrap/scss/custom-forms";*/
-@import "../libs/bootstrap/scss/nav";
+/*@import "../libs/bootstrap/scss/nav";*/
 @import "../libs/bootstrap/scss/navbar";
 /*@import "../libs/bootstrap/scss/card";
 @import "../libs/bootstrap/scss/breadcrumb";
@@ -39,4 +39,9 @@
 
 
 /* import m../libs/bootstrap/scss/ain.scss */
-@import "_style_main.scss";
+@import "reset.scss";
+@import "fonts.scss";
+@import "colour.scss";
+@import "header.scss";
+/*@import "style_main.scss";*/
+@import "footer.scss";
