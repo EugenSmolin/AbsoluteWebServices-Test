@@ -1,68 +1,78 @@
 .btn-primary {
   @include button-variant(
-          $colorBlue,
-          $colorBlue,
-      $hover-background: darken($colorBlue, 7.5%),
-      $hover-border: darken($colorBlue, 10%),
-      $active-background: darken($colorBlue, 10%),
-      $active-border: darken($colorBlue, 12.5%)
+          $primary,
+          $primary,
+      $hover-background: darken($primary, 7.5%),
+      $hover-border: darken($primary, 10%),
+      $active-background: darken($primary, 10%),
+      $active-border: darken($primary, 12.5%)
   );
 }
 
-.btn-default {
+
+/* .btn-default {
   @include button-variant(
-          $colorWhite,
-          $colorBlue,
-      $hover-background: darken($colorWhite, 7.5%),
-      $hover-border: darken($colorBlue, 10%),
-      $active-background: darken($colorWhite, 10%),
-      $active-border: darken($colorBlue, 12.5%)
+          $light,
+          $light,
+      $hover-background: darken($light, 7.5%),
+      $hover-border: darken($light, 10%),
+      $active-background: darken($light, 10%),
+      $active-border: darken($light, 12.5%)
   );
-}
+} */
 
 .btn-success {
   @include button-variant(
-          $colorGreen,
-          $colorGreen,
-      $hover-background: darken($colorGreen, 7.5%),
-      $hover-border: darken($colorGreen, 10%),
-      $active-background: darken($colorGreen, 10%),
-      $active-border: darken($colorGreen, 12.5%)
+          $success,
+          $success,
+      $hover-background: darken($success, 7.5%),
+      $hover-border: darken($success, 10%),
+      $active-background: darken($success, 10%),
+      $active-border: darken($success, 12.5%)
   );
 }
 
 .btn-info {
   @include button-variant(
-          $colorSky,
-          $colorSky,
-      $hover-background: darken($colorSky, 7.5%),
-      $hover-border: darken($colorSky, 10%),
-      $active-background: darken($colorSky, 10%),
-      $active-border: darken($colorSky, 12.5%)
+          $info,
+          $info,
+      $hover-background: darken($info, 7.5%),
+      $hover-border: darken($info, 10%),
+      $active-background: darken($info, 10%),
+      $active-border: darken($info, 12.5%)
   );
 }
 
 .btn-warning {
   @include button-variant(
-          $colorPink,
-          $colorPink,
-      $hover-background: darken($colorPink, 7.5%),
-      $hover-border: darken($colorPink, 10%),
-      $active-background: darken($colorPink, 10%),
-      $active-border: darken($colorPink, 12.5%)
+          $warning,
+          $warning,
+      $hover-background: darken($warning, 7.5%),
+      $hover-border: darken($warning, 10%),
+      $active-background: darken($warning, 10%),
+      $active-border: darken($warning, 12.5%)
   );
 }
 
 .btn-danger {
   @include button-variant(
-          $colorRed,
-          $colorRed,
-      $hover-background: darken($colorRed, 7.5%),
-      $hover-border: darken($colorRed, 10%),
-      $active-background: darken($colorRed, 10%),
-      $active-border: darken($colorRed, 12.5%)
+          $danger,
+          $danger,
+      $hover-background: darken($danger, 7.5%),
+      $hover-border: darken($danger, 10%),
+      $active-background: darken($danger, 10%),
+      $active-border: darken($danger, 12.5%)
   );
 }
+
+/* $primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default; */
 
 .btn-primary,
 .btn-default,
@@ -76,18 +86,6 @@
   font-size: 14px;
   margin: 0 5px 10px;
   color: #fff;
-
-  &:hover {
-    color: $colorWhite;
-  }
-}
-
-.btn-default {
-  color: $colorBlue;
-
-  &:hover {
-    color: $colorBlue;
-  }
 }
 
 .section-buttons {
