@@ -1,0 +1,10 @@
+.section-map {
+	margin-top: 100px;
+
+	@include media-breakpoint-only(sm) {
+		display: none;
+    }
+    @include media-breakpoint-only(xs) {
+		display: none;
+    }
+}

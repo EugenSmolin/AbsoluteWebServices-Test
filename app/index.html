@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Absolute Web Services</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<header>
-  <div class="header-top">
-    <div class="row">
-      <div class="header-top__logo">
-        <img src="img/logo.png" alt="Logo">
-      </div>
-      <div class="header-search">
-        Search
+  <header>
+    <div class="header-top">
+      <div class="row">
+        <div class="header-top__logo">
+          <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="header-search">
+          Search
+        </div>
       </div>
     </div>
-  </div>
-  <div class="header-list">
-    <nav class="navbar navbar-expand-md navbar-light header-list__nav">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="header-list">
+      <nav class="navbar navbar-expand-md navbar-light header-list__nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -123,15 +123,15 @@
   <div class="section-carousel">
     <h2>Carousel</h2>
     <div class="slider">
-      <div class="owl-carousel owl-theme">
+      <div id="carousel" class="owl-carousel owl-theme">
         <div class="slide item">
           <div class="slide__img">
             <img src="img/img-slide-1.png" alt="">
           </div>
           <div class="slide__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut itaque nulla officia omnis optio quas, quasi reprehenderit saepe sit voluptatibus?</p>
-            <h5>Lorem ipsum dolor sit.</h5>
-            <h6>Lorem ipsum.</h6>
+            <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+            <h5>Chewbacca</h5>
+            <h6>July 2017</h6>
           </div>
         </div>
         <div class="slide item">
@@ -139,9 +139,9 @@
             <img src="img/img-slide-2.png" alt="">
           </div>
           <div class="slide__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem corporis quis reprehenderit tenetur? Cum ex itaque nulla porro provident quos?</p>
-            <h5>Lorem ipsum dolor sit.</h5>
-            <h6>Lorem ipsum.</h6>
+            <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+            <h5>Chewbacca</h5>
+            <h6>July 2017</h6>
           </div>
         </div>
         <div class="slide item">
@@ -149,9 +149,9 @@
             <img src="img/img-slide-3.png" alt="">
           </div>
           <div class="slide__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque cumque illum ipsum libero minus molestias, sequi sint tenetur unde?</p>
-            <h5>Lorem ipsum dolor sit.</h5>
-            <h6>Lorem ipsum.</h6>
+            <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+            <h5>Chewbacca</h5>
+            <h6>July 2017</h6>
           </div>
         </div>
         <div class="slide item">
@@ -159,31 +159,26 @@
             <img src="img/img-slide-4.png" alt="">
           </div>
           <div class="slide__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt incidunt libero nam neque qui sapiente sunt. Delectus, saepe, totam!</p>
-            <h5>Lorem ipsum dolor sit.</h5>
-            <h6>Lorem ipsum.</h6>
+            <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+            <h5>Chewbacca</h5>
+            <h6>July 2017</h6>
           </div>
         </div>
       </div>
-      <!--<div id="carousel-custom-dots" class="owl-dots">
-        <div class="owl-dot">1</div>
-        <div class="owl-dot">2</div>
-        <div class="owl-dot">3</div>
-        <div class="owl-dot">4</div>
-      </div>-->
+
     </div>
   </div>
 
 </section>
 
-<section class="map-block">
-
+<section class="section-map">
+  <div id="googleMap" style="width: 100%; height: 450px;"></div>
 </section>
 
 <footer>
   <div class="container">
     <div class="row">
-      <div class="footer-list">
+      <div class="footer-list shop-list">
         <div class="footer-list__name">Shop</div>
         <ul>
           <li><a href="#" class="footer-list__link">Browse By Holidays</a></li>
@@ -193,7 +188,7 @@
           <li><a href="#" class="footer-list__link">Corporate Gifts</a></li>
         </ul>
       </div>
-      <div class="footer-list">
+      <div class="footer-list about-list">
         <div class="footer-list__name">About</div>
         <ul>
           <li><a href="#" class="footer-list__link">About Spirited Gifts</a></li>
@@ -203,7 +198,7 @@
           <li><a href="#" class="footer-list__link">Shipping & Returns</a></li>
         </ul>
       </div>
-      <div class="footer-list">
+      <div class="footer-list more-list">
         <div class="footer-list__name">More</div>
         <ul>
           <li><a href="#" class="footer-list__link">Privacy Policy</a></li>
@@ -213,8 +208,22 @@
           <li><a href="#" class="footer-list__link">Contact Us</a></li>
         </ul>
       </div>
-      <div class="footer-list">
+      <div class="footer-list follow-list">
         <div class="footer-list__name">Follow us</div>
+        <div class="soc-block">
+          <a href="https://www.facebook.com/" class="soc-icon" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/" class="soc-icon" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="soc-icon" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.pinterest.com/" class="soc-icon" target="_blank">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -225,26 +234,95 @@
 <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
 <script>
-  $('.owl-carousel').owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 10,
-    nav: true,
-    // dotsContainer: '#carousel-custom-dots',
-    // dotsData: true
-    /*responsive:{
-      0: {
-        items: 1
-      },
-      768: {
-        items: 3
-      },
-      992: {
-        items: 1
-      }
-    }*/
-  });
+  function myMap() {
+    var mapProp = {
+      center: new google.maps.LatLng(51.508742,-0.120850),
+      zoom: 7,
+      styles: [
+          {
+              "featureType": "administrative",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                  {
+                      "color": "#444444"
+                  }
+              ]
+          },
+          {
+              "featureType": "landscape",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "color": "#f2f2f2"
+                  }
+              ]
+          },
+          {
+              "featureType": "poi",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "road",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "saturation": -100
+                  },
+                  {
+                      "lightness": 45
+                  }
+              ]
+          },
+          {
+              "featureType": "road.highway",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "simplified"
+                  }
+              ]
+          },
+          {
+              "featureType": "road.arterial",
+              "elementType": "labels.icon",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "transit",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "water",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "color": "#0049B0"
+                  },
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          }
+      ]
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  }
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtcg0pIxCnC-M9uc1TtoJP4GxJ-luR1PM&callback=myMap"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

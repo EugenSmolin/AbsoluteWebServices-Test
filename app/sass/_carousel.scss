@@ -21,8 +21,7 @@
       @include make-col-offset(1);
     }
     @include media-breakpoint-only(xs) {
-      @include make-col(10);
-      @include make-col-offset(1);
+      @include make-col(12);
     }
 
     .slide {
@@ -30,12 +29,73 @@
         display: inline-block;
         width: 50%;
         float: left;
+        padding: 20px 95px;
+        margin-top: -30px;
+
+        @include media-breakpoint-only(lg) {
+          padding: 20px 60px;
+        }
+        @include media-breakpoint-only(md) {
+          padding: 20px 10px;
+        }
+        @include media-breakpoint-only(sm) {
+          padding: 15px;
+          margin-top: 0;
+        }
+        @include media-breakpoint-only(xs) {
+          display: block;
+          width: 230px;
+          float: none;
+          padding: 20px;
+          margin: 0 auto;
+        }
+
+        img {
+          display: block;
+          width: 100%;
+        }
       }
 
       &__text {
         display: inline-block;
         width: 50%;
-        float: right;
+        padding: 40px 40px 0 0;
+
+        @include media-breakpoint-only(md) {
+          padding: 30px 20px;
+        }
+        @include media-breakpoint-only(sm) {
+          padding: 10px;
+        }
+        @include media-breakpoint-only(xs) {
+          width: 100%;
+          padding: 15px;
+        }
+
+        p {
+          font-family: "MyriadRegular", sans-serif;
+          font-size: 16px;
+          line-height: 22px;
+          color: $colorFontGrey;
+
+          @include media-breakpoint-only(sm) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          @include media-breakpoint-only(xs) {
+          }
+        }
+        h5 {
+          text-transform: uppercase;
+          font-family: "MyriadBold", sans-serif;
+          font-size: 20px;
+          margin: 20px 0;
+        }
+        h6 {
+          font-family: "MyriadRegular", sans-serif;
+          font-size: 16px;
+          color: $colorFontGrey;
+        }
       }
     }
   }
@@ -43,26 +103,40 @@
 
 
 .owl-carousel .item {
-  /*width: 750px;*/
   height: 230px;
   background: $colorWhite;
-  border: 1px solid $colorLightGrey;
-  padding: 15px;
-  margin: 0 auto;
+  border: 1px solid $colorGrey;
+  margin: 20px auto;
+  margin-right: 1px;
+
+  @include media-breakpoint-only(sm) {
+    height: 200px;
+  }
+  @include media-breakpoint-only(xs) {
+    height: auto;
+  }
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
 }
 
 .owl-carousel button.owl-dot {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: #ccc;
   margin: 0 5px;
 }
 
-.owl-carousel .owl-nav {
-  text-align: center;
-  margin: 10px 0;
+.owl-carousel button.owl-dot .custom-dots{
+  width: 100%;
 }
+
+/* .owl-carousel .owl-nav {
+  position: absolute;
+  top: 0;
+} */
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
@@ -71,17 +145,46 @@
   cursor: pointer;
 }
 
-.owl-carousel .owl-dots {
-  text-align: center;
-}
-
 .owl-carousel .owl-dot.active {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid $colorBlue;
   border-radius: 50%;
-  background: #888;
   margin: 0 5px;
 }
 
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 40%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $colorGrey;
+  color: $colorGrey;
+  text-align: center;
+  font-size: 18px;
+  transform: translateY(-50%);
+
+  &:hover {
+    border: 1px solid $colorBlue;
+    color: $colorBlue;
+  }
+}
+
+.custom-prev {
+  left: -50px;
+}
+
+.custom-next {
+  right: -50px;
+}
 
 
+@include media-breakpoint-only(xs) {
+  .owl-nav {
+    display: none;
+  }
+}
