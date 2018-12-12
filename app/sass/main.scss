@@ -36,13 +36,23 @@
 @import "../libs/bootstrap/scss/print"; */
 
 
+/* FONT AWESOME */
+@import "../libs/fontawesome/scss/fontawesome.scss";
+@import "../libs/fontawesome/scss/solid.scss";
+@import "../libs/fontawesome/scss/regular.scss";
+@import "../libs/fontawesome/scss/brands.scss";
 
+/* OWL CAROUSEL */
+@import '../libs/OwlCarousel/src/scss/owl.carousel';
 
-/* import m../libs/bootstrap/scss/ain.scss */
+/* MAIN */
 @import "reset.scss";
+@import "style_main.scss";
 @import "fonts.scss";
 @import "colour.scss";
 @import "header.scss";
-@import "_buttons.scss";
-/*@import "style_main.scss";*/
+@import "buttons.scss";
+@import "inputs.scss";
+@import "star_rating.scss";
+@import "carousel.scss";
 @import "footer.scss";

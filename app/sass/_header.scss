@@ -50,7 +50,7 @@ header {
   }
 
   .header-list {
-    background-color: $lightGrey;
+    background-color: $colorLightGrey;
 
     @include media-breakpoint-only(sm) {
       background-color: transparent;
@@ -87,12 +87,12 @@ header {
       }
 
       &:hover {
-        background-color: $greyHover;
+        background-color: $colorGrey;
         color: $colorBlue;
       }
     }
     .nav-link.active {
-      background-color: $greyHover;
+      background-color: $colorGrey;
       color: $colorBlue;
     }
 

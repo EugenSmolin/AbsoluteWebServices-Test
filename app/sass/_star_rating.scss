@@ -1,0 +1,56 @@
+.rating {
+  display: inline-block;
+  border: none;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 18px;
+  display: inline-block;
+  @extend %fa-icon;
+  @extend .far;
+  content: fa-content($fa-var-star);
+}
+
+.rating > label {
+  color: $colorOrange;
+  float: right;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.rating > input:checked ~ label:before, /* show gold star when clicked */
+.rating:not(:checked) > label:before:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label:before {
+  @extend .fas;
+  color: $colorOrange;
+}
+
+/* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label:before, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label:before {
+  @extend .fas;
+  color: $colorOrange;
+  opacity: .7;
+}
+
+
+.rating-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    display: inline-block;
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 15px;
+    margin-left: 15px;
+  }
+}

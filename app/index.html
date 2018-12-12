@@ -6,8 +6,6 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Absolute Web Services</title>
-  <!--<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">-->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -24,44 +22,152 @@
     </div>
   </div>
   <div class="header-list">
-    <div class="row">
-      <nav class="navbar navbar-expand-md navbar-light header-list__nav">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home</a>
-            <a class="nav-item nav-link" href="#">Services</a>
-            <a class="nav-item nav-link" href="#">Portfolio</a>
-            <a class="nav-item nav-link" href="#">Gallery</a>
-            <a class="nav-item nav-link" href="#">Help &amp; Faq</a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
-          </div>
+    <nav class="navbar navbar-expand-md navbar-light header-list__nav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Services</a>
+          <a class="nav-item nav-link" href="#">Portfolio</a>
+          <a class="nav-item nav-link" href="#">Gallery</a>
+          <a class="nav-item nav-link" href="#">Help &amp; Faq</a>
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-    </div>
   </div>
 </header>
 
 <section class="main-content">
-  <div class="container">
-    <div class="row">
-      <!-- BUTTONS -->
-      <div class="buttons-block">
-        <h2>Buttons</h2>
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-default">Default</button>
-        <button class="btn btn-success">Success</button>
-        <button class="btn btn-info">Info</button>
-        <button class="btn btn-warning">Warning</button>
-        <button class="btn btn-danger">Danger</button>
-      </div>
-
+  <!-- BUTTONS -->
+  <div class="section-buttons">
+    <h2>Buttons</h2>
+    <div class="btn-block">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-default">Default</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-danger">Danger</button>
     </div>
   </div>
+
+  <!-- INPUTS -->
+  <div class="section-inputs">
+    <h2>Inputs</h2>
+    <div class="inp-block">
+      <div class="checkbox-block">
+        <input id="check-on" type="checkbox" class="checkbox-block__checkbox" checked>
+        <label for="check-on"></label>
+        <span class="checkbox-block__text">Checkbox Active</span>
+      </div>
+      <div class="radio-block">
+        <input id="radio-on" type="radio" class="radio-block__radio" checked>
+        <label for="radio-on"></label>
+        <span class="radio-block__text">Radio Active</span>
+      </div>
+      <div class="switch-block">
+        <input id="switch-on" type="checkbox" class="switch-block__switcher" checked>
+        <label for="switch-on" class="switch"></label>
+        <span class="switch-block__text">Switcher ON</span>
+      </div>
+    </div>
+    <div class="inp-block">
+      <div class="checkbox-block">
+        <input id="check-off" type="checkbox" class="checkbox-block__checkbox">
+        <label for="check-off"></label>
+        <span class="checkbox-block__text">Checkbox</span>
+      </div>
+      <div class="radio-block">
+        <input id="radio-off" type="radio" class="radio-block__radio">
+        <label for="radio-off"></label>
+        <span class="radio-block__text">Radio</span>
+      </div>
+      <div class="switch-block">
+        <input id="switch-off" type="checkbox" class="switch-block__switcher">
+        <label for="switch-off" class="switch"></label>
+        <span class="switch-block__text">Switcher OFF</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAR RATING -->
+  <div class="section-inputs">
+    <h2>Star Rating</h2>
+    <div class="rating-block">
+
+    </div>
+    <div class="rating-block">
+      <fieldset class="rating">
+        <input type="radio" id="star5" name="rating" value="5"/>
+        <label class="full" for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"/>
+        <label class="full" for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"/>
+        <label class="full" for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"/>
+        <label class="full" for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"/>
+        <label class="full" for="star1"></label>
+      </fieldset>
+      <div class="rating-block__text">Check rating</div>
+    </div>
+  </div>
+
+  <!-- CAROUSEL -->
+  <div class="section-carousel">
+    <h2>Carousel</h2>
+    <div class="slider">
+      <div class="owl-carousel owl-theme">
+        <div class="slide item">
+          <div class="slide__img">
+            <img src="img/img-slide-1.png" alt="">
+          </div>
+          <div class="slide__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut itaque nulla officia omnis optio quas, quasi reprehenderit saepe sit voluptatibus?</p>
+            <h5>Lorem ipsum dolor sit.</h5>
+            <h6>Lorem ipsum.</h6>
+          </div>
+        </div>
+        <div class="slide item">
+          <div class="slide__img">
+            <img src="img/img-slide-2.png" alt="">
+          </div>
+          <div class="slide__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem corporis quis reprehenderit tenetur? Cum ex itaque nulla porro provident quos?</p>
+            <h5>Lorem ipsum dolor sit.</h5>
+            <h6>Lorem ipsum.</h6>
+          </div>
+        </div>
+        <div class="slide item">
+          <div class="slide__img">
+            <img src="img/img-slide-3.png" alt="">
+          </div>
+          <div class="slide__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque cumque illum ipsum libero minus molestias, sequi sint tenetur unde?</p>
+            <h5>Lorem ipsum dolor sit.</h5>
+            <h6>Lorem ipsum.</h6>
+          </div>
+        </div>
+        <div class="slide item">
+          <div class="slide__img">
+            <img src="img/img-slide-4.png" alt="">
+          </div>
+          <div class="slide__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt incidunt libero nam neque qui sapiente sunt. Delectus, saepe, totam!</p>
+            <h5>Lorem ipsum dolor sit.</h5>
+            <h6>Lorem ipsum.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <section class="map-block">
@@ -109,10 +215,28 @@
 </footer>
 
 
-<!--<script src="libs/bootstrap/js/bootstrap.min.js"></script>-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
+<script>
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+    nav: true,
+    /*responsive:{
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 1
+      }
+    }*/
+  });
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,87 @@
+.section-carousel {
+  @include make-container();
+  @include make-container-max-widths();
+
+  .slider {
+    @include make-col-ready();
+    @include media-breakpoint-only(xl) {
+      @include make-col(10);
+      @include make-col-offset(1);
+    }
+    @include media-breakpoint-only(lg) {
+      @include make-col(10);
+      @include make-col-offset(1);
+    }
+    @include media-breakpoint-only(md) {
+      @include make-col(10);
+      @include make-col-offset(1);
+    }
+    @include media-breakpoint-only(sm) {
+      @include make-col(10);
+      @include make-col-offset(1);
+    }
+    @include media-breakpoint-only(xs) {
+      @include make-col(10);
+      @include make-col-offset(1);
+    }
+
+    .slide {
+      &__img {
+        display: inline-block;
+        width: 50%;
+        float: left;
+      }
+
+      &__text {
+        display: inline-block;
+        width: 50%;
+        float: right;
+      }
+    }
+  }
+}
+
+
+.owl-carousel .item {
+  /*width: 750px;*/
+  height: 230px;
+  background: $colorWhite;
+  border: 1px solid $colorLightGrey;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.owl-carousel button.owl-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 5px;
+}
+
+.owl-carousel .owl-nav {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  font-size: 26px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+}
+
+.owl-carousel .owl-dot.active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #888;
+  margin: 0 5px;
+}
+
+
+
