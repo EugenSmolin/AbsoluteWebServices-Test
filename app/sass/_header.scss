@@ -4,6 +4,12 @@ header {
     @include make-container-max-widths();
     padding: 25px 0;
 
+    .row {
+      @include media-breakpoint-only(xs) {
+        margin: 0;
+      }
+    }
+
     &__logo {
       @include make-col-ready();
       @include media-breakpoint-only(xl) {
@@ -13,20 +19,52 @@ header {
         @include make-col(3);
       }
       @include media-breakpoint-only(md) {
-        @include make-col(3);
+        @include make-col(4);
       }
       @include media-breakpoint-only(sm) {
-        @include make-col(6);
+        @include make-col(4);
+        @include make-col-offset(1);
       }
       @include media-breakpoint-only(xs) {
-        @include make-col(12);
+        @include make-col(6);
+        @include make-col-offset(3);
+        text-align: center;
       }
 
       img {
         width: 100%;
+        @include media-breakpoint-only(xs) {
+          width: 180px;
+        }
       }
     }
+
+    .search-mobile {
+      display: none;
+      @include make-col-ready();
+      @include media-breakpoint-only(xs) {
+        @include make-col(3);
+        display: block;
+      }
+
+      &__btn {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-size: 26px;
+        color: $colorBlue;
+        float: right;
+        margin-top: 8px;
+        margin-right: 25px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+
     .header-search {
+      display: block;
       @include make-col-ready();
       @include media-breakpoint-only(xl) {
         @include make-col(4);
@@ -37,14 +75,78 @@ header {
         @include make-col-offset(5);
       }
       @include media-breakpoint-only(md) {
-        @include make-col(4);
-        @include make-col-offset(5);
+        @include make-col(5);
+        @include make-col-offset(3);
       }
       @include media-breakpoint-only(sm) {
-        @include make-col(6);
+        @include make-col(7);
       }
       @include media-breakpoint-only(xs) {
         @include make-col(12);
+        position: absolute;
+        top: 70px;
+        margin-top: 15px;
+        min-height: 66px;
+        padding: 15px;
+        background-color: $colorLightGrey;
+        display: none;
+        z-index: 10;
+        transition: all .3s linear;
+
+      }
+
+      &__btn {
+        display: none;
+        @include media-breakpoint-only(xs) {
+          display: block;
+        }
+      }
+
+      .form-search {
+        position: relative;
+        margin-top: 15px;
+        @include media-breakpoint-only(md) {
+          margin-top: 10px;
+        }
+        @include media-breakpoint-only(sm) {
+          margin-top: 5px;
+        }
+        @include media-breakpoint-only(xs) {
+          margin-top: 0;
+        }
+
+        /*@include media-breakpoint-only(xs) {
+          display: block;
+          width: 100%;
+          margin: 50px 25px 0;
+        }*/
+
+        &__inp {
+          position: absolute;
+          top: 0;
+          right: 70px;
+          width: 75%;
+          height: 35px;
+          padding: 0 5px;
+          border: 1px solid $colorGrey;
+          @include media-breakpoint-only(xs) {
+            width: 80%;
+          }
+        }
+        &__btn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 70px;
+          height: 36px;
+          padding: 9px;
+          border: 1px solid $colorBlue;
+          background-color: $colorBlue;
+          color: $colorWhite;
+          text-align: center;
+          z-index: 2;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -54,9 +156,32 @@ header {
 
     @include media-breakpoint-only(sm) {
       background-color: transparent;
+      margin-top: -60px;
     }
     @include media-breakpoint-only(xs) {
+      margin-top: -20px;
+      background-color: #fff;
+      position: relative;
+      z-index: 2;
+
+    }
+
+    &__btn {
       background-color: transparent;
+      color: $colorBlue;
+      font-size: 30px;
+      border: none;
+      display: none;
+      @include media-breakpoint-only(sm) {
+        margin-bottom: 30px;
+        display: block;
+      }
+      @include media-breakpoint-only(xs) {
+        margin-bottom: 17px;
+        margin-top: -42px;
+        margin-left: 35px;
+        display: block;
+      }
     }
 
     &__nav {
@@ -82,8 +207,13 @@ header {
       text-align: center;
       color: #000;
 
-      @include media-breakpoint-only(md) {
-        // padding: 0 20px;
+      @include media-breakpoint-only(sm) {
+        text-align: left;
+        padding: 0 15px;
+      }
+      @include media-breakpoint-only(xs) {
+        text-align: left;
+        padding: 0 35px;
       }
 
       &:hover {

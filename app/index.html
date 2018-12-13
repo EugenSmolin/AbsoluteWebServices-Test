@@ -16,16 +16,26 @@
         <div class="header-top__logo">
           <img src="img/logo.png" alt="Logo">
         </div>
-        <div class="header-search">
-          Search
+        <div class="search-mobile">
+          <button class="search-mobile__btn" id="js-search-mobile-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="header-search" id="js-header-search">
+          <form class="form-search">
+            <input class="form-search__inp" type="search" placeholder="Search">
+            <button class="form-search__btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
         </div>
       </div>
     </div>
     <div class="header-list">
       <nav class="navbar navbar-expand-md navbar-light header-list__nav">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="header-list__btn" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
@@ -66,27 +76,29 @@
         <label for="check-on"></label>
         <span class="checkbox-block__text">Checkbox Active</span>
       </div>
-      <div class="radio-block">
-        <input id="radio-on" type="radio" class="radio-block__radio" checked>
-        <label for="radio-on"></label>
-        <span class="radio-block__text">Radio Active</span>
-      </div>
-      <div class="switch-block">
-        <input id="switch-on" type="checkbox" class="switch-block__switcher" checked>
-        <label for="switch-on" class="switch"></label>
-        <span class="switch-block__text">Switcher ON</span>
-      </div>
-    </div>
-    <div class="inp-block">
       <div class="checkbox-block">
         <input id="check-off" type="checkbox" class="checkbox-block__checkbox">
         <label for="check-off"></label>
         <span class="checkbox-block__text">Checkbox</span>
       </div>
+    </div>
+    <div class="inp-block">
+      <div class="radio-block">
+        <input id="radio-on" type="radio" class="radio-block__radio" checked>
+        <label for="radio-on"></label>
+        <span class="radio-block__text">Radio Active</span>
+      </div>
       <div class="radio-block">
         <input id="radio-off" type="radio" class="radio-block__radio">
         <label for="radio-off"></label>
         <span class="radio-block__text">Radio</span>
+      </div>
+    </div>
+    <div class="inp-block">
+      <div class="switch-block">
+        <input id="switch-on" type="checkbox" class="switch-block__switcher" checked>
+        <label for="switch-on" class="switch"></label>
+        <span class="switch-block__text">Switcher ON</span>
       </div>
       <div class="switch-block">
         <input id="switch-off" type="checkbox" class="switch-block__switcher">

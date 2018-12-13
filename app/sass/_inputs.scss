@@ -179,17 +179,24 @@
 .checkbox-block,
 .radio-block,
 .switch-block {
-  width: 160px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .section-inputs {
   @include make-container();
   @include make-container-max-widths();
+  text-align: center;
 
   .inp-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    display: inline-block;
+    width: 160px;
+    vertical-align: top;
+    @include media-breakpoint-only(xs) {
+      display: block;
+      margin-top: 20px;
+
+    }
   }
 }
