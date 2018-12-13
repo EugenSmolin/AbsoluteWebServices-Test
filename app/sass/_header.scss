@@ -1,4 +1,6 @@
 header {
+  transition: all .4s linear;
+
   .header-top {
     @include make-container();
     @include make-container-max-widths();
@@ -34,7 +36,7 @@ header {
       img {
         width: 100%;
         @include media-breakpoint-only(xs) {
-          width: 180px;
+          width: 160px;
         }
       }
     }
@@ -55,8 +57,8 @@ header {
         font-size: 26px;
         color: $colorBlue;
         float: right;
-        margin-top: 8px;
-        margin-right: 25px;
+        margin-top: 6px;
+        margin-right: 14px;
         border: none;
         background-color: transparent;
         cursor: pointer;
@@ -85,7 +87,7 @@ header {
         @include make-col(12);
         position: absolute;
         top: 70px;
-        margin-top: 15px;
+        margin-top: 11px;
         min-height: 66px;
         padding: 15px;
         background-color: $colorLightGrey;
@@ -155,8 +157,10 @@ header {
     background-color: $colorLightGrey;
 
     @include media-breakpoint-only(sm) {
-      background-color: transparent;
-      margin-top: -60px;
+      margin-top: -20px;
+      background-color: #fff;
+      position: relative;
+      z-index: 2;
     }
     @include media-breakpoint-only(xs) {
       margin-top: -20px;
@@ -173,12 +177,13 @@ header {
       border: none;
       display: none;
       @include media-breakpoint-only(sm) {
-        margin-bottom: 30px;
+        margin-bottom: 17px;
+        margin-top: -41px;
         display: block;
       }
       @include media-breakpoint-only(xs) {
         margin-bottom: 17px;
-        margin-top: -42px;
+        margin-top: -41px;
         margin-left: 35px;
         display: block;
       }
@@ -226,5 +231,26 @@ header {
       color: $colorBlue;
     }
 
+  }
+}
+
+.menu-fixed {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 99 !important;
+}
+
+#menu-scroll-mobile {
+  background-color: $colorWhite;
+  position: inherit;
+
+  @include media-breakpoint-only(sm) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
   }
 }
