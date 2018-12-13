@@ -3,39 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Absolute Web Services</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<header class="menu-default" id="menu-scroll-mobile">
-  <div class="header-top">
-    <div class="row">
-      <div class="header-top__logo">
-        <img src="img/logo.png" alt="Logo">
-      </div>
-      <div class="search-mobile">
-        <button class="search-mobile__btn" id="js-search-mobile-btn">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-      <div class="header-search" id="js-header-search">
-        <form class="form-search">
-          <input class="form-search__inp" type="search" placeholder="Search">
-          <button class="form-search__btn" type="submit">
-            <i class="fas fa-search"></i>
+  <header class="menu-default" id="menu-scroll-mobile">
+    <div class="header-top">
+      <div class="row">
+        <div class="header-top__logo">
+          <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="search-mobile">
+          <button class="search-mobile__btn" id="js-search-mobile-btn">
+            <i class="fas fa-search" id="js-icon-search"></i>
           </button>
-        </form>
+        </div>
+        <div class="header-search" id="js-header-search">
+          <form>
+            <div class="form-search">
+              <input class="form-search__inp" type="text" placeholder="Search">
+              <button class="form-search__btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="header-list menu-default" id="menu-scroll">
-    <nav class="navbar navbar-expand-md navbar-light header-list__nav">
-      <button class="header-list__btn" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+    <div class="header-list menu-default" id="menu-scroll">
+      <nav class="navbar navbar-expand-md navbar-light header-list__nav">
+        <button class="header-list__btn" id="js-menu-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars" id="js-icon-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
@@ -146,54 +148,56 @@
   <!-- CAROUSEL -->
   <div class="section-carousel">
     <h2>Carousel</h2>
-    <div class="slider">
-      <div id="carousel" class="owl-carousel owl-theme">
-        <div class="slide item">
-          <div class="slide__img">
-            <img src="img/img-slide-1.png" alt="">
-          </div>
-          <div class="slide__text">
-            <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
+    <div class="row">
+      <div class="slider">
+        <div id="carousel" class="owl-carousel owl-theme">
+          <div class="slide item">
+            <div class="slide__img">
+              <img src="img/img-slide-1.png" alt="">
+            </div>
+            <div class="slide__text">
+              <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
               one good choice at a time.</p>
-            <h5>Chewbacca</h5>
-            <h6>July 2017</h6>
+              <h5>Chewbacca</h5>
+              <h6>July 2017</h6>
+            </div>
+          </div>
+          <div class="slide item">
+            <div class="slide__img">
+              <img src="img/img-slide-2.png" alt="">
+            </div>
+            <div class="slide__text">
+              <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
+              one good choice at a time.</p>
+              <h5>Chewbacca</h5>
+              <h6>July 2017</h6>
+            </div>
+          </div>
+          <div class="slide item">
+            <div class="slide__img">
+              <img src="img/img-slide-3.png" alt="">
+            </div>
+            <div class="slide__text">
+              <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
+              one good choice at a time.</p>
+              <h5>Chewbacca</h5>
+              <h6>July 2017</h6>
+            </div>
+          </div>
+          <div class="slide item">
+            <div class="slide__img">
+              <img src="img/img-slide-4.png" alt="">
+            </div>
+            <div class="slide__text">
+              <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
+              one good choice at a time.</p>
+              <h5>Chewbacca</h5>
+              <h6>July 2017</h6>
+            </div>
           </div>
         </div>
-        <div class="slide item">
-          <div class="slide__img">
-            <img src="img/img-slide-2.png" alt="">
-          </div>
-          <div class="slide__text">
-            <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
-              one good choice at a time.</p>
-            <h5>Chewbacca</h5>
-            <h6>July 2017</h6>
-          </div>
-        </div>
-        <div class="slide item">
-          <div class="slide__img">
-            <img src="img/img-slide-3.png" alt="">
-          </div>
-          <div class="slide__text">
-            <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
-              one good choice at a time.</p>
-            <h5>Chewbacca</h5>
-            <h6>July 2017</h6>
-          </div>
-        </div>
-        <div class="slide item">
-          <div class="slide__img">
-            <img src="img/img-slide-4.png" alt="">
-          </div>
-          <div class="slide__text">
-            <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
-              one good choice at a time.</p>
-            <h5>Chewbacca</h5>
-            <h6>July 2017</h6>
-          </div>
-        </div>
-      </div>
 
+      </div>
     </div>
   </div>
 
@@ -276,84 +280,84 @@
       center: new google.maps.LatLng(51.508742, -0.120850),
       zoom: 7,
       styles: [
+      {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
         {
-          "featureType": "administrative",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#444444"
-            }
-          ]
-        },
-        {
-          "featureType": "landscape",
-          "elementType": "all",
-          "stylers": [
-            {
-              "color": "#f2f2f2"
-            }
-          ]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "all",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "road",
-          "elementType": "all",
-          "stylers": [
-            {
-              "saturation": -100
-            },
-            {
-              "lightness": 45
-            }
-          ]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "all",
-          "stylers": [
-            {
-              "visibility": "simplified"
-            }
-          ]
-        },
-        {
-          "featureType": "road.arterial",
-          "elementType": "labels.icon",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "transit",
-          "elementType": "all",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
-        },
-        {
-          "featureType": "water",
-          "elementType": "all",
-          "stylers": [
-            {
-              "color": "#0049B0"
-            },
-            {
-              "visibility": "on"
-            }
-          ]
+          "color": "#444444"
         }
+        ]
+      },
+      {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+        {
+          "color": "#f2f2f2"
+        }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+        {
+          "visibility": "off"
+        }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+        {
+          "saturation": -100
+        },
+        {
+          "lightness": 45
+        }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+        {
+          "visibility": "simplified"
+        }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+        {
+          "visibility": "off"
+        }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+        {
+          "visibility": "off"
+        }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+        {
+          "color": "#0049B0"
+        },
+        {
+          "visibility": "on"
+        }
+        ]
+      }
       ]
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);

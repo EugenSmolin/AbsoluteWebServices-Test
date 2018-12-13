@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
     items: 1,
     loop: true,
-    margin: 10,
+    // margin: 10,
     nav: true,
     navText: [
       '<div class="custom-prev"><i class="fas fa-chevron-left"></i></div>',
@@ -12,7 +12,7 @@ $(document).ready(function () {
 });
 
 
-// the following to the end is whats needed for the thumbnails.
+// === CAROUSEL IMAGE === //
 $(document).ready(function () {
   // 1) ASSIGN EACH 'DOT' A NUMBER
   dotcount = 1;
@@ -47,7 +47,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  // menu scroll
+  // menu scroll fixed
   $(window).scroll(function () {
     var widthWindow = $(window).width();
 
@@ -69,9 +69,25 @@ $(document).ready(function () {
 
   });
 
-  // menu toggle mobile
+  // search toggle mobile
   $('body').on('click', '#js-search-mobile-btn', function () {
-    $('#js-header-search').toggle();
+    var iconSearch = $(this).find('#js-icon-search');
+    if (iconSearch.hasClass('fa-search')) {
+      iconSearch.removeClass('fa-search').addClass('fa-times');
+    } else {
+      iconSearch.removeClass('fa-times').addClass('fa-search');
+    }
+    $('#js-header-search').slideToggle(300);
+  });
+
+  // menu toggle mobile
+  $('body').on('click', '#js-menu-btn', function() {
+    var iconBars = $(this).find('#js-icon-bars');
+    if (iconBars.hasClass('fa-bars')) {
+      iconBars.removeClass('fa-bars').addClass('fa-times');
+    } else {
+      iconBars.removeClass('fa-times').addClass('fa-bars');
+    }
   });
 
   // menu footer mobile
